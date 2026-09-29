@@ -1,0 +1,72 @@
+{
+  "version": "0.1.0",
+  "font": {
+    "path": "THSarabunNew.ttf",
+    "size": 16
+  },
+  "tokenizer": {
+    "non_breaking_enabled": true,
+    "non_breaking_words_path": "data/lexicons/non_breaking_words.json"
+  },
+  "layout": {
+    "use_line_end_rules": true,
+    "line_end_rules_path": "data/lexicons/line_end_rules.json"
+  },
+  "shapes": {
+    "dynamic_from_prototype": true,
+    "prototypes": {
+      "square_like": "ต้องไปรับการรักษา",
+      "tall_rect": "ต้องไปรับการ"
+    },
+    "adaptive_width": {
+      "enabled": true,
+      
+      "_comment_short": "=== ข้อความสั้น (< 100% ของ prototype) ===",
+      "short_text_threshold": 1.0,
+      "short_text_scale": 0.7,
+      "_scale_short": "ขยาย: 7.0x (700%) - ใช้ความกว้างตาม prototype",
+      
+      "_comment_normal": "=== ข้อความปกติ (100-200% ของ prototype) ===",
+      "normal_text_threshold": 2.0,
+      "normal_text_scale": 1.0,
+      "_scale_normal": "ขยาย: 1.0x (100%) - ใช้ความกว้างตาม prototype",
+      
+      "_comment_medium": "=== ข้อความยาวปานกลาง (201-300% ของ prototype) ===",
+      "medium_text_threshold": 3.0,
+      "medium_text_scale": 1.25,
+      "_scale_medium": "ขยาย: 1.25x (125%)",
+      
+      "_comment_long": "=== ข้อความยาวมาก (301-400% ของ prototype) ===",
+      "long_text_threshold": 4.0,
+      "long_text_scale": 1.5,
+      "_scale_long": "ขยาย: 1.5x (150%)",
+      
+      "_comment_very_long_s": "=== ข้อความยาวมาก s (401-500% ของ prototype) ===",
+      "very_long_s_threshold": 5.0,
+      "very_long_s_scale": 1.6,
+      "_scale_very_long_s": "ขยาย: 1.6x (160%)",
+      
+      "_comment_very_long_m": "=== ข้อความยาวมาก m (501-600% ของ prototype) ===",
+      "very_long_m_threshold": 6.0,
+      "very_long_m_scale": 1.7,
+      "_scale_very_long_m": "ขยาย: 1.7x (170%)",
+      
+      "_comment_very_long_l": "=== ข้อความยาวมาก l (601-700% ของ prototype) ===",
+      "very_long_l_threshold": 7.0,
+      "very_long_l_scale": 1.8,
+      "_scale_very_long_l": "ขยาย: 1.8x (180%)",
+      
+      "_comment_extreme": "=== ข้อความยาวเกิน (> 700% ของ prototype) ===",
+      "extreme_text_scale": 1.8,
+      "_scale_extreme": "ขยาย: 1.8x (180%) - ขยายสูงสุด",
+      
+      "_comment_limits": "=== ขีดจำกัด ===",
+      "min_scale": 1.0,
+      "max_scale": 1.8,
+      "_limits_note": "min_scale: ลดได้ต่ำสุด, max_scale: ขยายได้สูงสุด 180%"
+    }
+  }
+  
+}
+
+
