@@ -1,5 +1,13 @@
 # LineHarmony
 
+> **English summary** — Thai text layout engine for comic speech balloons: balanced
+> word-wrap driven by real font metrics, with Thai-specific rules (protected words never
+> split, connectors never end a line, polite particles kept with the previous line).
+> Built on PyThaiNLP; ~0.7 ms per layout; covered by a pytest suite.
+
+---
+
+
 ระบบจัดวางข้อความภาษาไทยสำหรับบอลลูนการ์ตูน โดยคำนึงถึงรูปทรงและความสมดุลของข้อความ
 
 ## คุณสมบัติ
